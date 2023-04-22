@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setStatusFilter } from '../../redux/filters';
 import { FilterText, FilterContainer, FilterInput } from './Filter.styled';
 
-export const Filter = () => {
+const Filter = () => {
     const filter = useSelector(state => state.filter);
     const dispatch = useDispatch();
 
@@ -22,3 +22,4 @@ export const Filter = () => {
     </FilterContainer>
     );
 };
+export default Filter;

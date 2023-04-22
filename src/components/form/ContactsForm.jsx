@@ -6,7 +6,7 @@ import { addContacts } from 'redux/operations';
 import { getContacts } from 'redux/selectors';
 
 
-export const  ContactsForm = () => {
+const  ContactsForm = () => {
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
 
@@ -76,3 +76,6 @@ export const  ContactsForm = () => {
           </ContactsContainer>
         );
         }
+
+
+export default ContactsForm;

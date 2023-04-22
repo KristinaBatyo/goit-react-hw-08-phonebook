@@ -10,7 +10,7 @@ import { nanoid } from 'nanoid';
 import { getContacts, getFilter } from 'redux/selectors';
 import { deleteContacts } from 'redux/operations';
 
-export const ContactsListRender = () => {
+const ContactsListRender = () => {
   const contacts = useSelector(getContacts);
   const filters = useSelector(getFilter);
   const dispatch = useDispatch();
@@ -40,3 +40,5 @@ export const ContactsListRender = () => {
     </ContactsList>
   );
 };
+
+export default ContactsListRender;
