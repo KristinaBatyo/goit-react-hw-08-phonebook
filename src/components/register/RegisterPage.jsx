@@ -6,7 +6,7 @@ import { Form } from "./RegisterPage.styled";
 import Button from "components/button/Button";
 
 const RegisterPage = ({ onSubmit }) => {
-    const { state, handleChange, handleSubmit } = useForm({initialState, onSubmit});
+    const { handleChange, handleSubmit } = useForm({initialState, onSubmit});
 
     return (
       // < div >
