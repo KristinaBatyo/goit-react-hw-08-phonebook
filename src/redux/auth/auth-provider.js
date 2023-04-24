@@ -8,7 +8,7 @@ const AuthProvider = ({children}) => {
 
       useEffect(() => {
         dispatch(current());
-      }, []);
+      }, [dispatch]);
     
     return (
         <>{ children}</>
