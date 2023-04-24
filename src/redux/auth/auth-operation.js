@@ -45,3 +45,15 @@ export const current = createAsyncThunk(
     }
   }
 );
+
+export const logout = createAsyncThunk(
+  'auth/logour',
+  async (_, { rejectWithValue }) => {
+    try {
+      const data = await api.logout()
+      return data
+    } catch ({ resonce }) {
+      return rejectWithValue(resonce);
+    }
+  }
+);
