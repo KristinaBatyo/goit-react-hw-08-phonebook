@@ -11,7 +11,7 @@ const PrivateRoute = () => {
     if (!isLogin && !token) {
         return <Navigate to="/login"/>
     }
-    return <Outlet/>
+    return  <Outlet/>
 }
 
 export default PrivateRoute
