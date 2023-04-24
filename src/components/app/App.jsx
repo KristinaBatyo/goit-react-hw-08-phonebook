@@ -1,22 +1,16 @@
 import{AppContainer} from './App.styled';
 import { Routes, Route } from 'react-router-dom';
-import UserAuth from 'components/user/UserAuth';
-import User from 'components/user/UserMenu';
-import { useSelector } from 'react-redux';
-import { isUserLogin } from 'redux/auth/auth-selectors';
-
 import Contacts from 'components/contacts/Contacts';
 import RegisterPage from 'components/register/RegisterPage';
 import LoginPage from 'components/login/LoginPage';
-
+import { Navbar } from 'components/navbar/Navbar';
 
 export const App = () => {
-  const isLogin = useSelector(isUserLogin);
-  
+
+
   return (
     <AppContainer>
-      {!isLogin && <UserAuth />}
-      {isLogin && <User />}
+      <Navbar/>
 
       <Routes>
           <Route path="/contacts" element={<Contacts />} />
