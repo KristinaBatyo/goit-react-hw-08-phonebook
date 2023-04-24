@@ -1,6 +1,6 @@
 import{AppContainer} from './App.styled';
 import { Navbar } from 'components/navbar/Navbar';
-import UserRoutes from 'User.Routes';
+import UserRoutes from 'UserRoutes';
 
 export const App = () => {
 

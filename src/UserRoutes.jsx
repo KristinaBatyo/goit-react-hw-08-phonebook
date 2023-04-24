@@ -14,12 +14,15 @@ const UserRoutes = () => {
   return (
     <Suspense fallback={<p>...loading</p>}>
       <Routes>
+        <Route path="/" >
+          {''}
         <Route element={<PrivateRoute />}>
           <Route path="/contacts" element={<Contacts />} />
         </Route>
         <Route element={<PublicRoute />}>
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
+        </Route>
         </Route>
       </Routes>
     </Suspense>
