@@ -1,6 +1,7 @@
 import { getUser } from "redux/auth/auth-selectors";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "redux/auth/auth-operation";
+import { Button, UserMenu, Mail } from './UserMenu.styled';
 
  const User = () => {
     const { email } = useSelector(getUser);
@@ -11,10 +12,10 @@ import { logout } from "redux/auth/auth-operation";
     }
 
     return (
-    <div>
-    <p>{email}</p>
-    <button onClick={onLogout}>Logout</button>
-    </div>
+    <UserMenu>
+    <Mail>{email}</Mail>
+    <Button onClick={onLogout}>Logout</Button>
+    </UserMenu>
     );
  };
     

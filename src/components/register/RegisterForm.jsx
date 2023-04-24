@@ -17,9 +17,6 @@ const RegisterForm = ({ onSubmit }) => {
 
 
   return (
-    // < div >
-    //     <h1>Register page</h1>
-    // </ div>
     <Form onSubmit={handleSubmit}>
       <TextField value={name} handleChange={handleChange} {...fields.name} />
       <TextField value={email} handleChange={handleChange} {...fields.email} />
